@@ -1,6 +1,4 @@
-﻿using LotusCare.Forms;
-using LotusCare.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,11 +17,7 @@ namespace LotusCare
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\LotusCare\LotusCare\LotusCareDatabase.mdf;Integrated Security=True;Connect Timeout=30";
-
-            IUserService userService = new UserService(connectionString);
-
-            Application.Run(new LoginForm(userService));
+            Application.Run();
         }
     }
 }
