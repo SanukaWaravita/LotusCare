@@ -1,4 +1,5 @@
 ﻿using LotusCare.Models;
+using LotusCare.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,8 +24,7 @@ namespace LotusCare.Forms
 
         private void DashboardForm_Load(object sender, EventArgs e)
         {
-            // Example: show the logged-in user's name
-            this.Text = $"Welcome, {user.FullName} ({user.Role})";
+            
         }
     }
 }
